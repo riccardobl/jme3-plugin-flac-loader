@@ -2,7 +2,7 @@
 An asset loader for jmonkeyengine that uses JustFLAC (https://github.com/drogatkin/JustFLAC) to load flac files.
 
 ##Download 
-Latest release: [Version 1.0](https://bintray.com/artifact/download/riccardo/jme3-plugins/net/forkforge/flac_loader/1.0/flac_loader-1.0.jar)
+Latest release: [Version 1.0.1](https://bintray.com/artifact/download/riccardo/jme3-plugins/net/forkforge/jme3_plugins/flac_loader/1.0.1/flac_loader-1.0.1.jar)
 
 Dependencies: [JustFLAC](https://bintray.com/riccardo/thirdparty/JustFlac/view#files)
 
@@ -20,9 +20,9 @@ Dependencies: [JustFLAC](https://bintray.com/riccardo/thirdparty/JustFlac/view#f
 
 ```
 <dependency>
-  <groupId>net.forkforge</groupId>
+  <groupId>net.forkforge.jme3_plugins</groupId>
   <artifactId>flac_loader</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <type>jar</type>
 </dependency>
 ```
