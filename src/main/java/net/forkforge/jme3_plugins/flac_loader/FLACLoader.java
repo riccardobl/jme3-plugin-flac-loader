@@ -108,6 +108,8 @@ public class FLACLoader implements AssetLoader{
 	
 		}catch(Exception e){
 			e.printStackTrace();
+		}finally{
+			in.close();
 		}
 		return null;
 	}

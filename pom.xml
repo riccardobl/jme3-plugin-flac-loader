@@ -8,7 +8,7 @@
 		<artifactId>jme3-plugins-parent</artifactId>
 		<version>1.0</version>
 	</parent>
-	<groupId>net.forkforge</groupId>
+	<groupId>net.forkforge.jme3_plugins</groupId>
 	<artifactId>flac_loader</artifactId>
 	<version>1.0</version>
 	<name>flac_loader</name>
