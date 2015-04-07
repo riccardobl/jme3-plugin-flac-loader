@@ -26,3 +26,9 @@ Dependencies: [JustFLAC](https://bintray.com/riccardo/thirdparty/JustFlac/view#f
   <type>jar</type>
 </dependency>
 ```
+
+##Usage
+```
+  FLACLoader.init(assetManager);
+  AudioNode test_flac =new AudioNode(assetManager,"test.flac",true);
+```
