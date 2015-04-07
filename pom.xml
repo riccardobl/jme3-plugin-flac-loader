@@ -10,13 +10,22 @@
 	</parent>
 	<groupId>net.forkforge.jme3_plugins</groupId>
 	<artifactId>flac_loader</artifactId>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<name>flac_loader</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
 	<build>
+		<resources>
+			<resource>
+				<directory>assets</directory>
+				<excludes>
+					<exclude>**/*</exclude>
+				</excludes>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -67,11 +76,13 @@
 			<groupId>com.jme3</groupId>
 			<artifactId>jme3-desktop</artifactId>
 			<version>3.0.10</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.jme3</groupId>
 			<artifactId>jme3-lwjgl</artifactId>
 			<version>3.0.10</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.drogatkin</groupId>
