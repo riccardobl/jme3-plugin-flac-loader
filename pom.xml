@@ -17,6 +17,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+
+
 	<build>
 		<resources>
 			<resource>
@@ -55,18 +57,7 @@
 		</plugins>
 	</build>
 
-
-	<repositories>
-		<repository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>bintray-riccardo-thirdparty</id>
-			<name>bintray</name>
-			<url>http://dl.bintray.com/riccardo/thirdparty</url>
-		</repository>
-	</repositories>
-	<dependencies>
+<dependencies>
 		<dependency>
 			<groupId>com.jme3</groupId>
 			<artifactId>jme3-core</artifactId>
@@ -88,7 +79,25 @@
 			<groupId>org.drogatkin</groupId>
 			<artifactId>JustFLAC</artifactId>
 			<version>1.0</version>
-			<type>jar</type>
 		</dependency>
-	</dependencies>
+</dependencies>
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>bintray-riccardo-jme3-plugins</id>
+			<name>bintray</name>
+			<url>http://dl.bintray.com/riccardo/jme3-plugins</url>
+		</repository>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>bintray-riccardo-thirdparty</id>
+			<name>bintray</name>
+			<url>http://dl.bintray.com/riccardo/thirdparty</url>
+		</repository>
+	</repositories>
+	
 </project>

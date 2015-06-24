@@ -24,6 +24,7 @@
  * 	OTHER DEALINGS IN THE SOFTWARE.
  * 	For more information, please refer to <http://unlicense.org>
  */
+
 package net.forkforge.jme3_plugins.flac_loader.tests;
 
 import net.forkforge.jme3_plugins.flac_loader.FLACLoader;
