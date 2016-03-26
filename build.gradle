@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin:  'maven'
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+def jme_version ="frk-SNAPSHOT"
+def jme_group =  "com.github.riccardobl.jmonkeyengine"
+targetCompatibility = '1.8'
+sourceCompatibility = '1.8'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+			
+repositories {
+    mavenLocal()
+  	mavenCentral()	
+	maven {
+		url 'http://dl.bintray.com/riccardo/thirdparty'
+	}	
+	maven {  
+		url "https://jitpack.io" 
+	}
+	maven {
+		url 'http://dl.bintray.com/riccardo/jme3-plugins'
+	}
+}	
+
+dependencies {
+    compile "${jme_group}:jme3-core:${jme_version}"
+    compile "${jme_group}:jme3-lwjgl:${jme_version}"
+    compile "${jme_group}:jme3-desktop:${jme_version}"   
+	compile "org.drogatkin:JustFLAC:1.0"
+}
