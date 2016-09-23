@@ -26,8 +26,8 @@ repositories {
 }	
 
 dependencies {
-    compile "${jme_group}:jme3-core:${jme_version}"
-    compile "${jme_group}:jme3-lwjgl:${jme_version}"
-    compile "${jme_group}:jme3-desktop:${jme_version}"   
+    compileOnly "${jme_group}:jme3-core:${jme_version}"
+    compileOnly "${jme_group}:jme3-lwjgl:${jme_version}"
+    compileOnly "${jme_group}:jme3-desktop:${jme_version}"   
 	compile "org.drogatkin:JustFLAC:1.0"
 }
