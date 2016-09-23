@@ -1,6 +1,15 @@
 apply plugin: 'java'
 apply plugin:  'maven'
 
+buildscript {
+    repositories { jcenter() }
+
+    dependencies {
+        classpath 'com.netflix.nebula:gradle-extra-configurations-plugin:3.0.3'
+    }
+}
+apply plugin: 'nebula.provided-base'
+
 configurations.all {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
@@ -26,8 +35,8 @@ repositories {
 }	
 
 dependencies {
-    compileOnly "${jme_group}:jme3-core:${jme_version}"
-    compileOnly "${jme_group}:jme3-lwjgl:${jme_version}"
-    compileOnly "${jme_group}:jme3-desktop:${jme_version}"   
+    provided "${jme_group}:jme3-core:${jme_version}"
+    provided "${jme_group}:jme3-lwjgl:${jme_version}"
+    provided "${jme_group}:jme3-desktop:${jme_version}"   
 	compile "org.drogatkin:JustFLAC:1.0"
 }
